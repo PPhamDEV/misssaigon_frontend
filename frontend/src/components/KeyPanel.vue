@@ -1,14 +1,18 @@
 <template>
     <div>
-        <button @click="onClickChild(menu.m1.number)">{{menu.m1.number}}. {{menu.m1.desc}}</button>
+        <button v-for="item in menu" :key="item.id" @click="onClickChild(item)" >
+            {{item.number}}. {{item.desc}}
+        </button>
     </div>
-    
+
 </template>
 
 <script>
+
+
 export default {
     components: {
-    
+
     },
     data() {
         return {
@@ -232,8 +236,144 @@ export default {
                     number: "49",
                     desc: "Hühnerfleisch Szechuan",
                     price: 9.40
-                }
+                },
 
+
+                m60: {
+                    number: "60",
+                    desc: "Knusprige Ente Chop Seuy",
+                    price: 12.40
+                },
+                m61: {
+                    number: "61",
+                    desc: "Knusprige Ente Kung Pau",
+                    price: 12.60
+                },
+                m62: {
+                    number: "62",
+                    desc: "Knusprige Ente m. Süßsauer",
+                    price: 10.00
+                },
+                m62b: {
+                    number: "62b",
+                    desc: "Knusprige Ente m. Gemüse in Süßsauer Soße",
+                    price: 12.40
+                },
+                m63: {
+                    number: "63",
+                    desc: "Knusprige Ente m. Erdnuss",
+                    price: 10.00
+                },
+                m63b: {
+                    number: "63b",
+                    desc: "Knusprige Ente m. Gemüse und Erdnuss Soße",
+                    price: 11.40
+                },
+                m68: {
+                    number: "68",
+                    desc: "Knusprige Ente mit Kokosmilch Curry Soße",
+                    price: 12.60
+                },
+                m68a: {
+                    number: "68a",
+                    desc: "Knusprige Ente mit rotem Thai Curry Soße",
+                    price: 12.80
+                },
+                m69: {
+                    number: "69",
+                    desc: "Knusprige Ente Szechuan",
+                    price: 12.60
+                },
+
+
+                m64: {
+                    number: "64",
+                    desc: "Entenﬂeisch Chop Seuy",
+                    price: 10.40
+                },
+                m65: {
+                    number: "65",
+                    desc: "Entenfleisch Kung Pau",
+                    price: 10.40
+                },
+                m66: {
+                    number: "66",
+                    desc: "Entenﬂeisch in Süßsauer Soße",
+                    price: 10.40
+                },
+                m67: {
+                    number: "67",
+                    desc: "Entenfleisch in Kokosmilch Curry Soße",
+                    price: 10.40
+                },
+
+
+                m70: {
+                    number: "70",
+                    desc: "Garnelen Chop Seuy",
+                    price: 11.00
+                },
+                m71: {
+                    number: "71",
+                    desc: "Garnelen Kung Pau",
+                    price: 11.20
+                },
+                m72: {
+                    number: "72",
+                    desc: "Garnelen in Kokosmilch Curry Soße",
+                    price: 11.20
+                },
+                m72a: {
+                    number: "72a",
+                    desc: "Garnelen in rotem Thai Curry Soße",
+                    price: 11.40
+                },
+                m76: {
+                    number: "76",
+                    desc: "Garnelen in Süßsauer Soße",
+                    price: 11.00
+                },
+                m79: {
+                    number: "79",
+                    desc: "Garnelen in Szechuan Soße",
+                    price: 11.20
+                },
+
+                m80: {
+                    number: "80",
+                    desc: "Rindfleisch Chop Seuy",
+                    price: 10.20
+                },
+                m81: {
+                    number: "81",
+                    desc: "Rindfleisch Kung Pau",
+                    price: 10.40
+                },
+                m82: {
+                    number: "82",
+                    desc: "Rindfleisch in Kokosmilch Curry Soße",
+                    price: 10.40
+                },
+                m82a: {
+                    number: "82a",
+                    desc: "Rindfleisch in rotem Thai Curry Soße",
+                    price: 10.70
+                },
+                m86: {
+                    number: "86",
+                    desc: "Rindfleisch in Süßsauer Soße​",
+                    price: 10.20
+                },
+                m87: {
+                    number: "87",
+                    desc: "Rindfleisch in Soja Soße",
+                    price: 10.20
+                },
+                m89: {
+                    number: "89",
+                    desc: "Rindfleisch Szechuan",
+                    price: 10.40
+                }
             }
 
         }
